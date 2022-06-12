@@ -1,6 +1,17 @@
+import { Global } from '@emotion/react'
+
 const Fonts = () => (
-    <style jsx='true' global='true'>{`
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Poppins:wght@300&display=swap');
-    `}</style>
-  )
-  export default Fonts
+  <Global
+    styles={`
+      @font-face {
+        font-family: 'JetBrains Mono', monospace;
+        font-style: Light;
+        font-weight: 300;
+        font-display: swap;
+        src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+      },
+      `}
+  />
+)
+
+export default Fonts
