@@ -2,18 +2,11 @@ import {
   Container,
   Box,
   Link,
-  Stack,
   Heading,
   Flex,
   Text,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { GithubIcon } from './GithubIcon';
 import { LinkedinIcon } from './LinkedinIcon';
@@ -26,21 +19,6 @@ const LogoBox = styled.span`
   line-height: 20px;
   text-decoration: none;
 `;
-
-const LinkItem = ({ href, path, children }) => {
-  const inactiveButton = useColorModeValue('gray200', 'whiteAlpha.900');
-  const active = path === href;
-  return (
-    <Link
-      href={href}
-      p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveButton}
-    >
-      {children}
-    </Link>
-  );
-};
 
 const Logo = () => {
   return (
@@ -59,8 +37,6 @@ const Logo = () => {
 };
 
 const Navbar = props => {
-  const { path } = props;
-
   return (
     <Box
       position="fixed"
@@ -90,21 +66,6 @@ const Navbar = props => {
           <LinkedinIcon />
           <GithubIcon />
           <ColorModeSwitcher />
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <a href="/">
-                  <MenuItem as={Link}>Contact</MenuItem>
-                </a>
-              </MenuList>
-            </Menu>
-          </Box>
         </Box>
       </Container>
     </Box>
