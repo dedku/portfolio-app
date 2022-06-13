@@ -16,9 +16,9 @@ const AboutMe = () => {
           wrap={{ base: 'wrap', md: 'nowrap' }}
           pt={16}
         >
-          <Box w="100%" h={{ base: 'calc(50vh - 4rem)', md: '56' }}>
+          <Box w="100%" h={{ base: 'calc(50vh - 4rem)', md: '56' }} >
             <Center h="100%">
-            <Container >
+            <Container>
                 <Box display='flex' >
                     <Box
                     flexShrink={0}
@@ -84,7 +84,7 @@ const AboutMe = () => {
             <Center h="100%" mx={8}>
               <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins'>
                 <chakra.span color="#80FFEA">const </chakra.span>
-                <chakra.span color="#8AFF80">AboutMe </chakra.span>
+                <chakra.span color="#58a6ff">AboutMe </chakra.span>
                 <chakra.span color="#FF80BF"> =</chakra.span>
                 <chakra.span color="white"> &#123;</chakra.span>
                 <chakra.br />
@@ -94,33 +94,33 @@ const AboutMe = () => {
                 <chakra.br />
                 <chakra.span ml={2} color="#FF80BF">code:</chakra.span>
                 <chakra.span color="white">&#91;</chakra.span>
-                <chakra.span color="#8AFF80">Javascript</chakra.span>
+                <chakra.span color="#58a6ff">Javascript</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Typescript</chakra.span>
+                <chakra.span color="#58a6ff">Typescript</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">HTML</chakra.span>
+                <chakra.span color="#58a6ff">HTML</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">CSS</chakra.span>
+                <chakra.span color="#58a6ff">CSS</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">PHP</chakra.span>
+                <chakra.span color="#58a6ff">PHP</chakra.span>
                 <chakra.span color="white">&#125;</chakra.span>
                 <chakra.span color="white">&#44;</chakra.span>
                 <chakra.br />
                 <chakra.span ml={2} color="#FF80BF">tools:</chakra.span>
                 <chakra.span color="white">&#91;</chakra.span>
-                <chakra.span color="#8AFF80">React</chakra.span>
+                <chakra.span color="#58a6ff">React</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Vue</chakra.span>
+                <chakra.span color="#58a6ff">Vue</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">KeystoneJS</chakra.span>
+                <chakra.span color="#58a6ff">KeystoneJS</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Strapi</chakra.span>
+                <chakra.span color="#58a6ff">Strapi</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Tailwind</chakra.span>
+                <chakra.span color="#58a6ff">Tailwind</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Bootstrap</chakra.span>
+                <chakra.span color="#58a6ff">Bootstrap</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#8AFF80">Sass</chakra.span>
+                <chakra.span color="#58a6ff">Sass</chakra.span>
                 <chakra.span color="white">&#125;</chakra.span>
                 <chakra.span color="white">&#44;</chakra.span>
                 <chakra.br />
