@@ -4,6 +4,7 @@ import theme from './lib/theme';
 import Navbar from './components/Navbar';
 import Fonts from './components/Fonts';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Fonts />
       <Navbar />
       <AboutMe />
+      <Projects />
     </ChakraProvider>
   );
 }

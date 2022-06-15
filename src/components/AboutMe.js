@@ -14,9 +14,10 @@ const AboutMe = () => {
           minW="100%"
           basis="auto"
           wrap={{ base: 'wrap', md: 'nowrap' }}
-          pt={16}
+          pt={20}
+          mb={16}
         >
-          <Box w="100%" h={{ base: 'calc(50vh - 4rem)', md: '56' }} >
+          <Box w="100%" h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 10rem)' }}  maxH='400px'>
             <Center h="100%">
             <Container>
                 <Box display='flex' >
@@ -78,8 +79,9 @@ const AboutMe = () => {
             bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.100')}
             borderRadius={4}
             w="100%"
-            h={{ base: 'calc(50vh - 4rem)', md: '56' }}
+            h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 10rem)' }}
             alignItems="center"
+            maxH='400px'
           >
             <Center h="100%" mx={8}>
               <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins'>
