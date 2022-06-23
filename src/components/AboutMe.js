@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue, Button, VStack } from '@chakra-ui/react'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -61,7 +61,7 @@ const AboutMe = () => {
                 </Box>
                 <Spacer />
                 <Box
-                    borderRadius="lg"
+                    rounded='xl'
                     mt={6}
                     p={3}
                     textAlign="center"
@@ -77,13 +77,13 @@ const AboutMe = () => {
           </Box>
           <Box
             bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.100')}
-            borderRadius={4}
+            rounded='xl'
             w="100%"
             h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 10rem)' }}
             alignItems="center"
             maxH='400px'
           >
-            <Center h="100%" mx={8}>
+            <Center h="100%" mx={6}>
               <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins'>
                 <chakra.span color="#80FFEA">const </chakra.span>
                 <chakra.span color="#58a6ff">AboutMe </chakra.span>
@@ -105,7 +105,7 @@ const AboutMe = () => {
                 <chakra.span color="#58a6ff">CSS</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
                 <chakra.span color="#58a6ff">PHP</chakra.span>
-                <chakra.span color="white">&#125;</chakra.span>
+                <chakra.span color="white">&#93;</chakra.span>
                 <chakra.span color="white">&#44;</chakra.span>
                 <chakra.br />
                 <chakra.span ml={2} color="#FF80BF">tools:</chakra.span>
@@ -123,19 +123,19 @@ const AboutMe = () => {
                 <chakra.span color="#58a6ff">Bootstrap</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
                 <chakra.span color="#58a6ff">Sass</chakra.span>
-                <chakra.span color="white">&#125;</chakra.span>
+                <chakra.span color="white">&#93;</chakra.span>
                 <chakra.span color="white">&#44;</chakra.span>
                 <chakra.br />
                 <chakra.span ml={2} color="#FF80BF">learning:</chakra.span>
                 <chakra.span color="white">&#91;</chakra.span>
-                <chakra.span color="#FFFF80">"Redux-Toolkit"</chakra.span>
+                <chakra.span color="#FFFF80">'Redux-Toolkit'</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#FFFF80">"Styled-components"</chakra.span>
+                <chakra.span color="#FFFF80">'Styled-components'</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#FFFF80">"Next-js"</chakra.span>
+                <chakra.span color="#FFFF80">'Next-js'</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#FFFF80">"Chakra-ui"</chakra.span>
-                <chakra.span color="white">&#125;</chakra.span>
+                <chakra.span color="#FFFF80">'Chakra-ui'</chakra.span>
+                <chakra.span color="white">&#93;</chakra.span>
                 <chakra.br />
                 <chakra.span color="white">&#125;</chakra.span>
               </Text>
