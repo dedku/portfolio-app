@@ -13,7 +13,7 @@ export const GithubIcon = props => {
     size="md"
     fontSize="lg"
     aria-label='github profile'
-    bg={useColorModeValue('gray', 'whiteAlpha.500')}
+    bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.500')}
     marginLeft="2"
     icon={<IoLogoGithub />}
     onClick={() => openInNewTab('https://github.com/dedku')}
