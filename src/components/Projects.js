@@ -1,4 +1,4 @@
-import { Container, SimpleGrid, Box, Text, Flex, Spacer, VStack, Button, Divider, Badge, Center } from "@chakra-ui/react";
+import { Container, SimpleGrid, Box, Text, Flex, Spacer, VStack, Button, Divider, Badge, Center, Tag } from "@chakra-ui/react";
 import { RiVuejsFill } from 'react-icons/ri'
 import { IoLogoJavascript } from 'react-icons/io'
 import { useState } from "react";
@@ -31,7 +31,7 @@ const Projects = () => {
         mb={8}
         >
             <Box role='group'>
-                <Box pos="relative" h={{ base: 'calc(100vh - 12rem)', md: 'calc(50vh - 1rem)' }} rounded='xl' position='relative' onMouseOver={over} onMouseOut={out}>
+                <Box pos="relative" h={{ base: 'calc(100vh - 4rem)', md: 'calc(50vh - 1rem)' }} rounded='xl' position='relative' onMouseOver={over} onMouseOut={out}>
                     <Box bgImage="url('/Poligrafia-łowicz.png')" bgSize='cover' rounded='xl' position="absolute" top='0' right='0' left='0' bottom='0'  zIndex='-2' opacity='0.85' transition='0.5s' _groupHover={{ opacity: '0.05', transition: '0.3s'}}/>
                     <Flex>
                         <Text color="white" m={4} p={2} rounded='xl' bg="blackAlpha.900" fontSize={14} fontFamily='JetBrains Mono  , Poppins' fontWeight='bold' letterSpacing='wide'>Poligrafia Łowicz</Text>
@@ -45,14 +45,16 @@ const Projects = () => {
                     </Flex>
                     {isHovered &&
                     <Center>
-                    <VStack gap={8}>
+                    <VStack gap={8} mt={{ sm: '2rem', md: '0'}}>
                         <motion.div   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.05 }} >
                             <Box display='flex' justifyContent='space-between' w={64}>
-                                <Button bg='blackAlpha.900' color='white'>
-                                    <IoLogoGithub fontSize={64}/>
+                                <Button bg='blackAlpha.700' color='white'>
+                                    <IoLogoGithub fontSize={24}/>
+                                    <Text ml={2}>Github</Text>
                                 </Button>
-                                <Button bg='blackAlpha.900' color='white'>
-                                    <CgWebsite fontSize={64}/>
+                                <Button bg='blackAlpha.700' color='white'>
+                                    <CgWebsite fontSize={24}/>
+                                    <Text ml={2}>Website</Text>
                                 </Button>
                             </Box>
                         </motion.div>
@@ -65,9 +67,9 @@ const Projects = () => {
                         </motion.div>
                         <motion.div   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.9 }}>
                             <Box display='flex' justifyContent='space-between' w={64} >
-                                <Badge colorScheme='green' rounded='xl' p={2}>Vue 3</Badge>
-                                <Badge colorScheme='green' rounded='xl' p={2}>Vuex</Badge>
-                                <Badge colorScheme='yellow' rounded='xl' p={2}>JavaScript</Badge>
+                                <Tag variant='solid' colorScheme='green' rounded='xl' p={2}>Vue 3</Tag>
+                                <Tag variant='solid' colorScheme='green' rounded='xl' p={2}>Vuex</Tag>
+                                <Tag variant='solid' colorScheme='yellow' rounded='xl' p={2}>JavaScript</Tag>
                             </Box>
                         </motion.div>
                     </VStack>
