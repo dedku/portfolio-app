@@ -26,13 +26,13 @@ const Projects = () => {
             <Skeleton h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 1rem)' }} rounded='xl' position='relative' />
         </SimpleGrid> }
         { data && <SimpleGrid
-        columns={{ sm: 1, md: 2}} spacing='2rem' align="center" justify="center" minW="100%" pt={4} mb={8}
+        columns={{ sm: 1, md: 2}} spacing='2rem' align="center" justify="center" minW="100%" pt={4} mb={8} fontFamily='JetBrains Mono  , Poppins'
         >
             {data.map(i => { return <Box role='group'  key={i.projectId}>
-                <Box h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh -  1rem)' }} maxH='350px' rounded='xl' position='relative' onMouseOver={()=> setHovered(i.projectId)} onMouseOut={()=> setHovered(null)}>
+                <Box h={{ base: 'calc(50vh - 3rem)', md: 'calc(50vh -  3rem)' }} maxH='350px' minH='280px' rounded='xl' position='relative' onMouseOver={()=> setHovered(i.projectId)} onMouseOut={()=> setHovered(null)}>
                     <Box bgImage={i.imageUrl} bgSize='cover' rounded='xl' position="absolute" top='0' right='0' left='0' bottom='0'  zIndex='-2' opacity='0.85' transition='0.5s' _groupHover={{ opacity: '0.05', transition: '0.3s'}} />
                     <Flex>
-                        <Text color="white" m={4} p={2} rounded='xl' bg="blackAlpha.900" fontSize={14} fontFamily='JetBrains Mono  , Poppins' fontWeight='bold' letterSpacing='wide'>{i.projectName}</Text>
+                        <Text color="white" m={4} p={2} rounded='xl' bg="blackAlpha.900" fontSize={14} fontWeight='bold' letterSpacing='wide'>{i.projectName}</Text>
                         <Spacer />
                         <Box  m={4} p={2} rounded='xl' bg="blackAlpha.900" h='100%'>
                             <Flex gap={2}>
@@ -50,10 +50,10 @@ const Projects = () => {
                         <motion.div   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.05 }} >
                             <Box display='flex' justifyContent='space-between' w={64}>
                                 <Button bg='blackAlpha.900' color='white' onClick={() => openInNewTab(i.githubLink)}>
-                                    <Text fontSize='sm'>Github</Text>
+                                    <Text fontSize='sm' letterSpacing={2}>Github</Text>
                                 </Button>
                                 <Button bg='blackAlpha.900' color='white' onClick={() => openInNewTab(i.websiteLink)}>
-                                    <Text fontSize='sm'>Website</Text>
+                                    <Text fontSize='sm' letterSpacing={2}>Website</Text>
                                 </Button>
                             </Box>
                         </motion.div>
@@ -65,7 +65,7 @@ const Projects = () => {
                         <Text mx={14} > {i.projectDesc}  </Text>
                         </motion.div>
                         <motion.div   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.9 }}>
-                            <Box display='flex' justifyContent='space-between' w={64} >
+                            <Box display='flex' justifyContent='space-between' w={72} >
                                 {i.projectTags.map(tag => {return <Tag variant='solid' colorScheme={tag.tagColor} rounded='xl' p={2} key={tag.tagID}>{tag.tagName}</Tag>})}
                             </Box>
                         </motion.div>

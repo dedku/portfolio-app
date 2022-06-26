@@ -8,7 +8,7 @@ const scrollTo = (e) => {
   e.preventDefault();
   const target = e.target.getAttribute('href')
   const location = document.querySelector(target).offsetTop
-  window.scrollTo({left:0, top: location - 64});
+  window.scrollTo({left:0, top: location - 44});
 };
 
 const AboutMe = () => {
@@ -91,9 +91,10 @@ const AboutMe = () => {
             h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 10rem)' }}
             alignItems="center"
             maxH='400px'
+            minH='240px'
           >
             <Center h="100%" mx={6} flexDirection="column">
-              <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins'>
+              <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins' >
                 <chakra.span color="#80FFEA">const </chakra.span>
                 <chakra.span color="#58a6ff">AboutMe </chakra.span>
                 <chakra.span color="#FF80BF"> =</chakra.span>
@@ -148,10 +149,9 @@ const AboutMe = () => {
                 <chakra.br />
                 <chakra.span color="white">&#125;</chakra.span>
               </Text>
-              <Flex gap={4}>
-              <Button bg="#58a6ff">Download CV</Button>
-              <Button bg="#58a6ff">Message me</Button>
-              <Button bg="#58a6ff" onClick={scrollTo}><a href='#projects'>Message me</a></Button>
+              <Flex gap={4} fontFamily='JetBrains Mono  , Poppins'>
+              <Button bg="#007acc" fontSize={14}>Download CV</Button>
+              <Button bg="#007acc" fontSize={14} onClick={scrollTo} display={{sm: 'inline-block', md: 'none'}} href='#projects'>My Projects</Button>
               </Flex>
             </Center>
           </Box>

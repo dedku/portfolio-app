@@ -30,7 +30,7 @@
         "websiteLink": "https://test-druk-5abd4.web.app/",
         "projectProgres": "Compleated - 100%",
         "progresColor": "green",
-        "projectDesc": "CMS made in KeystonJs for a personal project. Login: demo / Password: demo",
+        "projectDesc": "CMS made in KeystonJs. Login: demo / Password: demo",
         "projectTags": [
             {"tagID": 1, "tagName": "KeystoneJS", "tagColor": "blue"},
             {"tagID": 2, "tagName": "React", "tagColor": "blue"},
