@@ -10,6 +10,7 @@
         "githubLink": "https://github.com/dedku",
         "websiteLink": "https://test-druk-5abd4.web.app/",
         "projectProgres": "In progress - 90%",
+        "progresColor": "yellow",
         "projectDesc": "Website made for Poligrafia Łowicz Company",
         "projectTags": [
             {"tagID": 1, "tagName": "Vue 3", "tagColor": "green"},
@@ -19,20 +20,58 @@
     },
     {
         "projectId": 2,
-        "projectName": "test2",
+        "projectName": "KeystoneJS CMS",
         "imageUrl": "/Poligrafia-łowicz.png",
         "icons": {
             "Keystone": true,
             "TypeScript": true
         },
-        "githubLink": "test",
-        "websiteLink": "test",
-        "projectProgres": "",
-        "projectDesc": "",
+        "githubLink": "https://github.com/dedku",
+        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "projectProgres": "Compleated - 100%",
+        "progresColor": "green",
+        "projectDesc": "CMS made in KeystonJs for a personal project. Login: demo / Password: demo",
         "projectTags": [
-            {"tagID": 1, "tagName": "Vue 3", "tagColor": "green"},
-            {"tagID": 2, "tagName": "Vuex", "tagColor": "green"},
+            {"tagID": 1, "tagName": "KeystoneJS", "tagColor": "blue"},
+            {"tagID": 2, "tagName": "React", "tagColor": "blue"},
+            {"tagID": 3, "tagName": "TypeScript", "tagColor": "blue"}
+        ]
+    },
+    {
+        "projectId": 3,
+        "projectName": "Portfolio website",
+        "imageUrl": "/Poligrafia-łowicz.png",
+        "icons": {
+            "React": true,
+            "JavaScript": true
+        },
+        "githubLink": "https://github.com/dedku",
+        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "projectProgres": "Compleated - 100%",
+        "progresColor": "green",
+        "projectDesc": "My portfolio website",
+        "projectTags": [
+            {"tagID": 1, "tagName": "React", "tagColor": "blue"},
+            {"tagID": 2, "tagName": "Chakra Ui", "tagColor": "green"},
             {"tagID": 3, "tagName": "JavaScript", "tagColor": "yellow"}
+        ]
+    },
+    {
+        "projectId": 4,
+        "projectName": "Vanilla JS App",
+        "imageUrl": "/Poligrafia-łowicz.png",
+        "icons": {
+            "JavaScript": true
+        },
+        "githubLink": "https://github.com/dedku",
+        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "projectProgres": "In progress - 70%",
+        "progresColor": "yellow",
+        "projectDesc": "Vanilla JavaScript App to show some JS and CSS skills",
+        "projectTags": [
+            {"tagID": 1, "tagName": "JavaScript", "tagColor": "yellow"},
+            {"tagID": 2, "tagName": "Sass/BEM", "tagColor": "pink"},
+            {"tagID": 3, "tagName": "Express", "tagColor": "green"}
         ]
     }
 ]

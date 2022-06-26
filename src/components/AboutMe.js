@@ -47,13 +47,14 @@ const AboutMe = () => {
                         </Box>
                     </Box>
                     <Spacer />
-                    <Box flexGrow={1} pt={{ base: '8', md: '4' }}>
+                    <Box flexGrow={1} pt={{ base: '8', md: '4' }} ml={{base: '8', md: '2'}}>
                         <Heading
                             as="h2"
                             variant="page-title"
                             fontFamily='JetBrains Mono  , Poppins'
                             fontWeight="bold"
                             alignContent='start'
+                            size={{sm: 'lg', md: 'xl'}}
                             >
                             Patryk Szabat
                         </Heading>
