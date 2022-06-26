@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Fonts from './components/Fonts';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <AboutMe />
       <Projects />
+      <Footer />
     </ChakraProvider>
   );
 }
