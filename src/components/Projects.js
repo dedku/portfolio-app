@@ -3,9 +3,6 @@ import { RiVuejsFill } from 'react-icons/ri'
 import { IoLogoJavascript } from 'react-icons/io'
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { IoLogoGithub } from 'react-icons/io'
-import { CgWebsite } from 'react-icons/cg'
-
 
 
 const Projects = () => {
@@ -20,7 +17,7 @@ const Projects = () => {
     }
 
     return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" className="projects">
         <SimpleGrid
         columns={{ sm: 1, md: 2}}
         spacing='2rem'
