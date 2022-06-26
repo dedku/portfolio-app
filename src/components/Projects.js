@@ -15,7 +15,7 @@ const Projects = () => {
     const { error, isPending, data } = useFetch('./data.json')
 
     return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" id="projects">
         { error && <Center h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 1rem)' }} rounded='xl' position='relative' bgColor='whiteAlpha.100'>  Error with fetching data : { error }</Center>}
         { isPending && <SimpleGrid
         columns={{ sm: 1, md: 2}} spacing='2rem' align="center" justify="center" minW="100%" pt={4} mb={8}

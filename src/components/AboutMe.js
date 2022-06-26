@@ -1,8 +1,15 @@
-import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue} from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue, Button} from '@chakra-ui/react'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+
+const scrollTo = (e) => {
+  e.preventDefault();
+  const target = e.target.getAttribute('href')
+  const location = document.querySelector(target).offsetTop
+  window.scrollTo({left:0, top: location - 64});
+};
 
 const AboutMe = () => {
     return (
@@ -85,7 +92,7 @@ const AboutMe = () => {
             alignItems="center"
             maxH='400px'
           >
-            <Center h="100%" mx={6}>
+            <Center h="100%" mx={6} flexDirection="column">
               <Text fontSize={{base: 'sm', md: 'xs'}} as="samp" fontFamily='JetBrains Mono  , Poppins'>
                 <chakra.span color="#80FFEA">const </chakra.span>
                 <chakra.span color="#58a6ff">AboutMe </chakra.span>
@@ -141,6 +148,11 @@ const AboutMe = () => {
                 <chakra.br />
                 <chakra.span color="white">&#125;</chakra.span>
               </Text>
+              <Flex gap={4}>
+              <Button bg="#58a6ff">Download CV</Button>
+              <Button bg="#58a6ff">Message me</Button>
+              <Button bg="#58a6ff" onClick={scrollTo}><a href='#projects'>Message me</a></Button>
+              </Flex>
             </Center>
           </Box>
         </Flex>
