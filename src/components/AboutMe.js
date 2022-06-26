@@ -53,10 +53,11 @@ const AboutMe = () => {
                             variant="page-title"
                             fontFamily='JetBrains Mono  , Poppins'
                             fontWeight="bold"
+                            alignContent='start'
                             >
                             Patryk Szabat
                         </Heading>
-                    <Text fontFamily='JetBrains Mono  , Poppins'>Junior Software Craftsman</Text>
+                      <Text fontFamily='JetBrains Mono  , Poppins'>Junior Software Craftsman</Text>
                     </Box>
                 </Box>
                 <Spacer />
