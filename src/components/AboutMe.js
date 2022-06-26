@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue, Button, VStack } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue} from '@chakra-ui/react'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -17,7 +17,7 @@ const AboutMe = () => {
           pt={20}
           mb={16}
         >
-          <Box w="100%" h={{ base: 'calc(50vh - 4rem)', md: 'calc(50vh - 10rem)' }}  maxH='400px'>
+          <Box w="100%" h={{ base: 'calc(50vh - 6rem)', md: 'calc(50vh - 10rem)' }}  maxH='400px'>
             <Center h="100%">
             <Container>
                 <Box display='flex' >

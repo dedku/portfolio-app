@@ -1,0 +1,38 @@
+[
+    {
+        "projectId": 1,
+        "projectName": "Poligrafia Łowicz",
+        "imageUrl": "/Poligrafia-łowicz.png",
+        "icons": {
+            "Vue": true,
+            "JavaScript": true
+        },
+        "githubLink": "https://github.com/dedku",
+        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "projectProgres": "In progress - 90%",
+        "projectDesc": "Website made for Poligrafia Łowicz Company",
+        "projectTags": [
+            {"tagID": 1, "tagName": "Vue 3", "tagColor": "green"},
+            {"tagID": 2, "tagName": "Vuex", "tagColor": "green"},
+            {"tagID": 3, "tagName": "JavaScript", "tagColor": "yellow"}
+        ]
+    },
+    {
+        "projectId": 2,
+        "projectName": "test2",
+        "imageUrl": "/Poligrafia-łowicz.png",
+        "icons": {
+            "Keystone": true,
+            "TypeScript": true
+        },
+        "githubLink": "test",
+        "websiteLink": "test",
+        "projectProgres": "",
+        "projectDesc": "",
+        "projectTags": [
+            {"tagID": 1, "tagName": "Vue 3", "tagColor": "green"},
+            {"tagID": 2, "tagName": "Vuex", "tagColor": "green"},
+            {"tagID": 3, "tagName": "JavaScript", "tagColor": "yellow"}
+        ]
+    }
+]
