@@ -1,4 +1,5 @@
 import { Box, Container, Flex, Heading, chakra, Image, Text, Spacer, Center, useColorModeValue, Button} from '@chakra-ui/react'
+import Motion from './Motion'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -14,6 +15,7 @@ const scrollTo = (e) => {
 const AboutMe = () => {
     return (
         <Container maxW="container.xl">
+        <Motion>
         <Flex
           gap={4}
           align="center"
@@ -124,9 +126,9 @@ const AboutMe = () => {
                 <chakra.span color="white">&#44; </chakra.span>
                 <chakra.span color="#58a6ff">Vue</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#58a6ff">KeystoneJS</chakra.span>
+                <chakra.span color="#58a6ff">Vuex</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
-                <chakra.span color="#58a6ff">Strapi</chakra.span>
+                <chakra.span color="#58a6ff">KeystoneJS</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
                 <chakra.span color="#58a6ff">Tailwind</chakra.span>
                 <chakra.span color="white">&#44; </chakra.span>
@@ -156,6 +158,7 @@ const AboutMe = () => {
             </Center>
           </Box>
         </Flex>
+        </Motion>
       </Container>
     )
 }
