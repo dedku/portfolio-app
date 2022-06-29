@@ -67,7 +67,7 @@
         "websiteLink": "https://medcure-web-app-production.up.railway.app/",
         "projectProgres": "In progress - 40%",
         "progresColor": "yellow",
-        "projectDesc": "Vanilla JavaScript App to show some JS and CSS skills",
+        "projectDesc": "Vanilla JavaScript App",
         "projectTags": [
             {"tagID": 1, "tagName": "JavaScript", "tagColor": "yellow"},
             {"tagID": 2, "tagName": "Sass/BEM", "tagColor": "pink"},
