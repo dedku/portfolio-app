@@ -91,7 +91,7 @@ const Projects = () => {
                   <Box
                     h={{ base: 'calc(50vh - 3rem)', md: 'calc(50vh -  3rem)' }}
                     maxH="350px"
-                    minH="280px"
+                    minH="300px"
                     rounded="xl"
                     position="relative"
                     onMouseOver={() => setHovered(i.projectId)}
