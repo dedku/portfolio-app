@@ -7,7 +7,7 @@
             "Vue": true,
             "JavaScript": true
         },
-        "githubLink": "https://github.com/dedku",
+        "githubLink": "https://github.com/dedku/Vue--printing-house",
         "websiteLink": "https://test-druk-5abd4.web.app/",
         "projectProgres": "In progress - 90%",
         "progresColor": "yellow",
@@ -21,13 +21,13 @@
     {
         "projectId": 2,
         "projectName": "KeystoneJS CMS",
-        "imageUrl": "/Poligrafia-łowicz.png",
+        "imageUrl": "/Keystone-cms.png",
         "icons": {
             "Keystone": true,
             "TypeScript": true
         },
-        "githubLink": "https://github.com/dedku",
-        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "githubLink": "https://github.com/dedku/keystojejs-karui",
+        "websiteLink": "https://admin.karui.pl/signin",
         "projectProgres": "Compleated - 100%",
         "progresColor": "green",
         "projectDesc": "CMS made in KeystonJs. Login: demo / Password: demo",
@@ -40,13 +40,13 @@
     {
         "projectId": 3,
         "projectName": "Portfolio website",
-        "imageUrl": "/Poligrafia-łowicz.png",
+        "imageUrl": "/Portfolio-website.png",
         "icons": {
             "React": true,
             "JavaScript": true
         },
-        "githubLink": "https://github.com/dedku",
-        "websiteLink": "https://test-druk-5abd4.web.app/",
+        "githubLink": "https://github.com/dedku/portfolio-app",
+        "websiteLink": "https://patryk.site/",
         "projectProgres": "Compleated - 100%",
         "progresColor": "green",
         "projectDesc": "My portfolio website",
@@ -59,13 +59,13 @@
     {
         "projectId": 4,
         "projectName": "Vanilla JS App",
-        "imageUrl": "/Poligrafia-łowicz.png",
+        "imageUrl": "/Vanilla-js-app.png",
         "icons": {
             "JavaScript": true
         },
-        "githubLink": "https://github.com/dedku",
-        "websiteLink": "https://test-druk-5abd4.web.app/",
-        "projectProgres": "In progress - 70%",
+        "githubLink": "https://github.com/dedku/MedCure-Web-App",
+        "websiteLink": "https://medcure-web-app-production.up.railway.app/",
+        "projectProgres": "In progress - 40%",
         "progresColor": "yellow",
         "projectDesc": "Vanilla JavaScript App to show some JS and CSS skills",
         "projectTags": [
